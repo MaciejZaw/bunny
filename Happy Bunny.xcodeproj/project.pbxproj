@@ -105,6 +105,18 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
+		A46BBD592404935D00FA54F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A46BBD3C2403301600FA54F8 /* ColorPallet.swift */,
+				A46BBD572404927200FA54F8 /* AppConfig.swift */,
+				A4D74D4C23FF7BD000B996D9 /* AppDelegate.swift */,
+				A4D74D4E23FF7BD000B996D9 /* SceneDelegate.swift */,
+				A4D74D5523FF7BD500B996D9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A4718CF123FF818E007179D8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,19 +155,15 @@
 		A4D74D4B23FF7BD000B996D9 /* Happy Bunny */ = {
 			isa = PBXGroup;
 			children = (
+				A4D74D5A23FF7BD500B996D9 /* Info.plist */,
+				A46BBD592404935D00FA54F8 /* Resources */,
 				A46BBD44240337EA00FA54F8 /* Enum */,
 				A46BBD41240336F800FA54F8 /* API */,
-				A46BBD3C2403301600FA54F8 /* ColorPallet.swift */,
 				A46BBD40240330C100FA54F8 /* Extensions & Utilitis */,
 				A4718CF623FF8231007179D8 /* Models */,
 				A4D74D6123FF7E3500B996D9 /* Storyboards */,
 				A4D74D6223FF7FD100B996D9 /* ViewControllers */,
 				A4718CF123FF818E007179D8 /* Views */,
-				A4D74D4C23FF7BD000B996D9 /* AppDelegate.swift */,
-				A46BBD572404927200FA54F8 /* AppConfig.swift */,
-				A4D74D4E23FF7BD000B996D9 /* SceneDelegate.swift */,
-				A4D74D5523FF7BD500B996D9 /* Assets.xcassets */,
-				A4D74D5A23FF7BD500B996D9 /* Info.plist */,
 			);
 			path = "Happy Bunny";
 			sourceTree = "<group>";
