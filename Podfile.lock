@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Localize-Swift (3.1.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Localize-Swift
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Localize-Swift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Localize-Swift: 4bed4f0ccac8be2ec3517ee359da80ba2adb0fae
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: e88f7b684be694bd0497d6583e4bea7ee4b6170c
+
+COCOAPODS: 1.8.4
