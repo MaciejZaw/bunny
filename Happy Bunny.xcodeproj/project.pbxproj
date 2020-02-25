@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		199A9ACFEBA4D84715CFE450 /* Pods_Happy_Bunny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE380844B119CC1C8376AF06 /* Pods_Happy_Bunny.framework */; };
+		A45F8C092404A031004B998C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A45F8C0B2404A031004B998C /* Localizable.strings */; };
+		A45F8C102404A913004B998C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F8C0F2404A913004B998C /* UIImage.swift */; };
 		A46BBD3B23FF92A000FA54F8 /* BunnyListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD3A23FF92A000FA54F8 /* BunnyListCollectionViewCell.swift */; };
 		A46BBD3D2403301600FA54F8 /* ColorPallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD3C2403301600FA54F8 /* ColorPallet.swift */; };
 		A46BBD3F240330B500FA54F8 /* UIColorExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD3E240330B500FA54F8 /* UIColorExtentions.swift */; };
@@ -18,6 +20,7 @@
 		A46BBD4C24033C6800FA54F8 /* BunnyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD4B24033C6800FA54F8 /* BunnyResponse.swift */; };
 		A46BBD5024035AE300FA54F8 /* BunnyTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD4F24035AE300FA54F8 /* BunnyTitleLabel.swift */; };
 		A46BBD5224035B6E00FA54F8 /* BunnyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD5124035B6E00FA54F8 /* BunnyLabel.swift */; };
+		A46BBD582404927200FA54F8 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD572404927200FA54F8 /* AppConfig.swift */; };
 		A4718CF423FF81DB007179D8 /* BunnyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4718CF223FF81DB007179D8 /* BunnyCollectionViewCell.swift */; };
 		A4718CF823FF8257007179D8 /* Bunny.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4718CF723FF8257007179D8 /* Bunny.swift */; };
 		A4D74D4D23FF7BD000B996D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D74D4C23FF7BD000B996D9 /* AppDelegate.swift */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		7801AE74DEACBAA85B0F65AD /* Pods-Happy Bunny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Bunny.release.xcconfig"; path = "Target Support Files/Pods-Happy Bunny/Pods-Happy Bunny.release.xcconfig"; sourceTree = "<group>"; };
+		A45F8C0A2404A031004B998C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A45F8C0C2404A05A004B998C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A45F8C0F2404A913004B998C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		A46BBD3A23FF92A000FA54F8 /* BunnyListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyListCollectionViewCell.swift; sourceTree = "<group>"; };
 		A46BBD3C2403301600FA54F8 /* ColorPallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallet.swift; sourceTree = "<group>"; };
 		A46BBD3E240330B500FA54F8 /* UIColorExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtentions.swift; sourceTree = "<group>"; };
@@ -40,6 +46,7 @@
 		A46BBD4B24033C6800FA54F8 /* BunnyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyResponse.swift; sourceTree = "<group>"; };
 		A46BBD4F24035AE300FA54F8 /* BunnyTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyTitleLabel.swift; sourceTree = "<group>"; };
 		A46BBD5124035B6E00FA54F8 /* BunnyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyLabel.swift; sourceTree = "<group>"; };
+		A46BBD572404927200FA54F8 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		A4718CF223FF81DB007179D8 /* BunnyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4718CF723FF8257007179D8 /* Bunny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bunny.swift; sourceTree = "<group>"; };
 		A4D74D4923FF7BD000B996D9 /* Happy Bunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Bunny.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +88,7 @@
 				A46BBD47240338CA00FA54F8 /* Log.swift */,
 				A46BBD4F24035AE300FA54F8 /* BunnyTitleLabel.swift */,
 				A46BBD5124035B6E00FA54F8 /* BunnyLabel.swift */,
+				A45F8C0F2404A913004B998C /* UIImage.swift */,
 			);
 			path = "Extensions & Utilitis";
 			sourceTree = "<group>";
@@ -101,6 +109,19 @@
 				A46BBD452403380B00FA54F8 /* QueryResultEnum.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		A46BBD592404935D00FA54F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A46BBD3C2403301600FA54F8 /* ColorPallet.swift */,
+				A46BBD572404927200FA54F8 /* AppConfig.swift */,
+				A4D74D4C23FF7BD000B996D9 /* AppDelegate.swift */,
+				A4D74D4E23FF7BD000B996D9 /* SceneDelegate.swift */,
+				A4D74D5523FF7BD500B996D9 /* Assets.xcassets */,
+				A45F8C0B2404A031004B998C /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A4718CF123FF818E007179D8 /* Views */ = {
@@ -141,18 +162,15 @@
 		A4D74D4B23FF7BD000B996D9 /* Happy Bunny */ = {
 			isa = PBXGroup;
 			children = (
+				A4D74D5A23FF7BD500B996D9 /* Info.plist */,
+				A46BBD592404935D00FA54F8 /* Resources */,
 				A46BBD44240337EA00FA54F8 /* Enum */,
 				A46BBD41240336F800FA54F8 /* API */,
-				A46BBD3C2403301600FA54F8 /* ColorPallet.swift */,
 				A46BBD40240330C100FA54F8 /* Extensions & Utilitis */,
 				A4718CF623FF8231007179D8 /* Models */,
 				A4D74D6123FF7E3500B996D9 /* Storyboards */,
 				A4D74D6223FF7FD100B996D9 /* ViewControllers */,
 				A4718CF123FF818E007179D8 /* Views */,
-				A4D74D4C23FF7BD000B996D9 /* AppDelegate.swift */,
-				A4D74D4E23FF7BD000B996D9 /* SceneDelegate.swift */,
-				A4D74D5523FF7BD500B996D9 /* Assets.xcassets */,
-				A4D74D5A23FF7BD500B996D9 /* Info.plist */,
 			);
 			path = "Happy Bunny";
 			sourceTree = "<group>";
@@ -227,6 +245,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = A4D74D4023FF7BCF00B996D9;
 			productRefGroup = A4D74D4A23FF7BD000B996D9 /* Products */;
@@ -244,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D74D5923FF7BD500B996D9 /* LaunchScreen.storyboard in Resources */,
+				A45F8C092404A031004B998C /* Localizable.strings in Resources */,
 				A4D74D5623FF7BD500B996D9 /* Assets.xcassets in Resources */,
 				A4D74D5423FF7BD000B996D9 /* Main.storyboard in Resources */,
 			);
@@ -299,10 +319,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A46BBD462403380B00FA54F8 /* QueryResultEnum.swift in Sources */,
+				A46BBD582404927200FA54F8 /* AppConfig.swift in Sources */,
 				A46BBD3D2403301600FA54F8 /* ColorPallet.swift in Sources */,
 				A46BBD4C24033C6800FA54F8 /* BunnyResponse.swift in Sources */,
 				A46BBD4A24033BB700FA54F8 /* BunnyRequest.swift in Sources */,
 				A46BBD48240338CA00FA54F8 /* Log.swift in Sources */,
+				A45F8C102404A913004B998C /* UIImage.swift in Sources */,
 				A4D74D5123FF7BD000B996D9 /* MainViewController.swift in Sources */,
 				A46BBD5024035AE300FA54F8 /* BunnyTitleLabel.swift in Sources */,
 				A4D74D4D23FF7BD000B996D9 /* AppDelegate.swift in Sources */,
@@ -319,6 +341,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A45F8C0B2404A031004B998C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A45F8C0A2404A031004B998C /* en */,
+				A45F8C0C2404A05A004B998C /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A4D74D5223FF7BD000B996D9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -11,6 +11,8 @@ import UIKit
 
 internal class ColorPallet {
     
+    internal static let appBackgraund = UIColor(0xeeeeee)
+    
     internal static func createGradientLayerForBunny(view: UIView) {
         var gradientLayer: CAGradientLayer!
 

@@ -25,7 +25,7 @@ class BunnyTitleLabel: UILabel {
         self.text = text
         self.textColor = .white
     
-        font = UIFont(name: "System-Bold", size: fontSize)
+        font = UIFont(name: AppConfig.boldFont, size: fontSize)
         
         let heightConstraint = NSLayoutConstraint(
             item: self,
