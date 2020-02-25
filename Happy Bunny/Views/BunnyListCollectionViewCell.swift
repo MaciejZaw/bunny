@@ -24,8 +24,27 @@ class BunnyListCollectionViewCell: UICollectionViewCell {
     
     private let margin: CGFloat = 16
     
-    internal func setCell(view: UICollectionView, bunny: Bunny) {
+    internal func setCell(view: UICollectionView, image: UIImage) {
         
-
+        imageView.frame = CGRect(
+            x: 8,
+            y: 8,
+            width: view.frame.height - 16,
+            height: view.frame.height - 16)
+        imageView.layer.cornerRadius = 8
+        imageView.layer.masksToBounds = true
+        imageView.layer.borderColor = UIColor.black.cgColor
+        imageView.layer.borderWidth = 1
+        imageView.contentMode = .scaleToFill
+        imageView.image = image
+        imageView.layoutIfNeeded()
+        
+        self.addSubview(imageView)
+    }
+    
+    internal func setCellWhitAddButton(view: UICollectionView) {
+        setCell(
+            view: view,
+            image: AppConfig.addingPlusIcon)
     }
 }

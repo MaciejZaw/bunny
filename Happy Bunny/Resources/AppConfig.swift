@@ -10,8 +10,12 @@ import Foundation
 
 public class AppConfig {
     
-    //MARK: FONT
+    //MARK: FONTS
     
     internal static let normalFont = "Rockwell-Regular"
     internal static let boldFont = "Rockwell-Bold"
+    
+    //MARK: ICONS
+    
+    internal static let addingPlusIcon = UIImage(named: "plus")?.setIconColor(.green) ?? UIImage()
 }

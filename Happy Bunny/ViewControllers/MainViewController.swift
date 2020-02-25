@@ -57,9 +57,17 @@ UICollectionViewDelegateFlowLayout {
     private func setupUI() {
         
         mainView.backgroundColor = ColorPallet.appBackgraund
+        
         bunnyCurrentCollectionView.backgroundColor = .clear
         bunnyCurrentCollectionView.isPagingEnabled = true
+        if let layout = bunnyCurrentCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+        }
+        
         bunnyListCollectionView.backgroundColor = .clear
+        if let layout = bunnyListCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+        }
     }
     
     //MARK: COLECTION VIEW
@@ -87,7 +95,9 @@ UICollectionViewDelegateFlowLayout {
         // LIST of bunnys
         
         if collectionView == bunnyListCollectionView {
-            return CGSize() //TODO
+            return CGSize(
+                width: bunnyListCollectionView.bounds.height,
+                height: bunnyListCollectionView.bounds.height)
         }
         
         return CGSize()
@@ -104,7 +114,7 @@ UICollectionViewDelegateFlowLayout {
         // LIST of bunnys
         
         if collectionView == bunnyListCollectionView {
-            return bunniesList.count
+            return bunniesList.count + 1
         }
         
         return 0
@@ -130,24 +140,42 @@ UICollectionViewDelegateFlowLayout {
         // LIST of bunnies
         
         if collectionView == bunnyListCollectionView {
-            let callBunnyList = collectionView.dequeueReusableCell(
+            
+             var cellImage: UIImage = UIImage()
+            
+            let cellBunnyList = collectionView.dequeueReusableCell(
                 withReuseIdentifier: "BunnyListCollectionViewCell",
                 for: indexPath) as! BunnyListCollectionViewCell
             
+           
+            if indexPath.row >= bunniesList.count {
+                // Adding "New bunny button" to the end of collection
+                cellBunnyList.setCellWhitAddButton(view: collectionView)
+            } else {
+                // Normal "LIST of bunnies" cell
+                cellImage = bunniesList[indexPath.row].image
+                cellBunnyList.setCell(view: collectionView, image: cellImage)
+            }
+
+            return cellBunnyList
             
-            let bunny = bunniesList[indexPath.row]
-            
-            //TODO: implement function
-            callBunnyList.setCell(view: collectionView, bunny: bunny)
-            
-            return callBunnyList
         }
         
         return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if collectionView == bunnyListCollectionView {
+            if indexPath.row >= bunniesList.count {
+                //TODO: Open Add bunny screen
+            } else {
+                bunnyCurrentCollectionView.selectItem(
+                    at: indexPath,
+                    animated: true,
+                    scrollPosition: .centeredHorizontally)
+            }
+            
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {

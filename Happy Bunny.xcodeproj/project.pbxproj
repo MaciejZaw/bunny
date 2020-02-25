@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		199A9ACFEBA4D84715CFE450 /* Pods_Happy_Bunny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE380844B119CC1C8376AF06 /* Pods_Happy_Bunny.framework */; };
 		A45F8C092404A031004B998C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A45F8C0B2404A031004B998C /* Localizable.strings */; };
+		A45F8C102404A913004B998C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F8C0F2404A913004B998C /* UIImage.swift */; };
 		A46BBD3B23FF92A000FA54F8 /* BunnyListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD3A23FF92A000FA54F8 /* BunnyListCollectionViewCell.swift */; };
 		A46BBD3D2403301600FA54F8 /* ColorPallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD3C2403301600FA54F8 /* ColorPallet.swift */; };
 		A46BBD3F240330B500FA54F8 /* UIColorExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD3E240330B500FA54F8 /* UIColorExtentions.swift */; };
@@ -34,6 +35,7 @@
 		7801AE74DEACBAA85B0F65AD /* Pods-Happy Bunny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Bunny.release.xcconfig"; path = "Target Support Files/Pods-Happy Bunny/Pods-Happy Bunny.release.xcconfig"; sourceTree = "<group>"; };
 		A45F8C0A2404A031004B998C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A45F8C0C2404A05A004B998C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A45F8C0F2404A913004B998C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		A46BBD3A23FF92A000FA54F8 /* BunnyListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyListCollectionViewCell.swift; sourceTree = "<group>"; };
 		A46BBD3C2403301600FA54F8 /* ColorPallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallet.swift; sourceTree = "<group>"; };
 		A46BBD3E240330B500FA54F8 /* UIColorExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtentions.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				A46BBD47240338CA00FA54F8 /* Log.swift */,
 				A46BBD4F24035AE300FA54F8 /* BunnyTitleLabel.swift */,
 				A46BBD5124035B6E00FA54F8 /* BunnyLabel.swift */,
+				A45F8C0F2404A913004B998C /* UIImage.swift */,
 			);
 			path = "Extensions & Utilitis";
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				A46BBD4C24033C6800FA54F8 /* BunnyResponse.swift in Sources */,
 				A46BBD4A24033BB700FA54F8 /* BunnyRequest.swift in Sources */,
 				A46BBD48240338CA00FA54F8 /* Log.swift in Sources */,
+				A45F8C102404A913004B998C /* UIImage.swift in Sources */,
 				A4D74D5123FF7BD000B996D9 /* MainViewController.swift in Sources */,
 				A46BBD5024035AE300FA54F8 /* BunnyTitleLabel.swift in Sources */,
 				A4D74D4D23FF7BD000B996D9 /* AppDelegate.swift in Sources */,
