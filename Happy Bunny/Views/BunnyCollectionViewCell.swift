@@ -6,6 +6,7 @@
 //  Copyright © 2020 Maciej Zawiejski. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class BunnyCollectionViewCell: UICollectionViewCell {

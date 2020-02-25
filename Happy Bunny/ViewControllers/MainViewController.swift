@@ -15,6 +15,8 @@ UICollectionViewDelegateFlowLayout {
 
     //MARK: OUTLET
     
+    @IBOutlet weak var mainView: UIView!
+    
     @IBOutlet weak var bunnyCurrentCollectionView: UICollectionView!
     @IBOutlet weak var bunnyListCollectionView: UICollectionView!
     
@@ -27,11 +29,15 @@ UICollectionViewDelegateFlowLayout {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Collection View
+        
         setCollectionViewRegister()
         bunnyCurrentCollectionView.delegate = self
         bunnyCurrentCollectionView.dataSource = self
         bunnyListCollectionView.delegate = self
         bunnyListCollectionView.dataSource = self
+        
+        // Geting data form server
         
         BunnyRequest.get() {
             [weak self] (queryResult, result: [Bunny]) in
@@ -42,6 +48,18 @@ UICollectionViewDelegateFlowLayout {
                 self?.bunnyListCollectionView.reloadData()
             }
         }
+        
+        // Setting up UI
+        
+        setupUI()
+    }
+    
+    private func setupUI() {
+        
+        mainView.backgroundColor = ColorPallet.appBackgraund
+        bunnyCurrentCollectionView.backgroundColor = .clear
+        bunnyCurrentCollectionView.isPagingEnabled = true
+        bunnyListCollectionView.backgroundColor = .clear
     }
     
     //MARK: COLECTION VIEW
