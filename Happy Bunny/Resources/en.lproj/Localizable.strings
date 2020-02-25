@@ -1,0 +1,13 @@
+/* 
+  Localizeble.strings
+  Happy Bunny
+
+  Created by compentio on 25/02/2020.
+  Copyright © 2020 Maciej Zawiejski. All rights reserved.
+*/
+
+"test" = "English";
+
+//MARK: BunnyCollectionViewCell
+
+"lbl_bunny_name" = "Bunny name";

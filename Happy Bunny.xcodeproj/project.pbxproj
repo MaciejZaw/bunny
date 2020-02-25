@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		199A9ACFEBA4D84715CFE450 /* Pods_Happy_Bunny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE380844B119CC1C8376AF06 /* Pods_Happy_Bunny.framework */; };
+		A45F8C092404A031004B998C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A45F8C0B2404A031004B998C /* Localizable.strings */; };
 		A46BBD3B23FF92A000FA54F8 /* BunnyListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD3A23FF92A000FA54F8 /* BunnyListCollectionViewCell.swift */; };
 		A46BBD3D2403301600FA54F8 /* ColorPallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD3C2403301600FA54F8 /* ColorPallet.swift */; };
 		A46BBD3F240330B500FA54F8 /* UIColorExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BBD3E240330B500FA54F8 /* UIColorExtentions.swift */; };
@@ -31,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		7801AE74DEACBAA85B0F65AD /* Pods-Happy Bunny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy Bunny.release.xcconfig"; path = "Target Support Files/Pods-Happy Bunny/Pods-Happy Bunny.release.xcconfig"; sourceTree = "<group>"; };
+		A45F8C0A2404A031004B998C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A45F8C0C2404A05A004B998C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A46BBD3A23FF92A000FA54F8 /* BunnyListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyListCollectionViewCell.swift; sourceTree = "<group>"; };
 		A46BBD3C2403301600FA54F8 /* ColorPallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallet.swift; sourceTree = "<group>"; };
 		A46BBD3E240330B500FA54F8 /* UIColorExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtentions.swift; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 				A4D74D4C23FF7BD000B996D9 /* AppDelegate.swift */,
 				A4D74D4E23FF7BD000B996D9 /* SceneDelegate.swift */,
 				A4D74D5523FF7BD500B996D9 /* Assets.xcassets */,
+				A45F8C0B2404A031004B998C /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -238,6 +242,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = A4D74D4023FF7BCF00B996D9;
 			productRefGroup = A4D74D4A23FF7BD000B996D9 /* Products */;
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D74D5923FF7BD500B996D9 /* LaunchScreen.storyboard in Resources */,
+				A45F8C092404A031004B998C /* Localizable.strings in Resources */,
 				A4D74D5623FF7BD500B996D9 /* Assets.xcassets in Resources */,
 				A4D74D5423FF7BD000B996D9 /* Main.storyboard in Resources */,
 			);
@@ -331,6 +337,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A45F8C0B2404A031004B998C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A45F8C0A2404A031004B998C /* en */,
+				A45F8C0C2404A05A004B998C /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A4D74D5223FF7BD000B996D9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
